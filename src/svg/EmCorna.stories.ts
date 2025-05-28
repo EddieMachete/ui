@@ -1,5 +1,5 @@
 import type { StoryObj } from '@storybook/web-components';
-import { EmCorna } from './EmCorna';
+import { EmCorna } from '@ui/svg/EmCorna';
 
 const meta = {
   title: 'SVG/EmCorna',

@@ -13,7 +13,10 @@
     "removeComments": false,
     "sourceMap": true,
     "strict": false,
-    "target": "es6"
+    "target": "es6",
+    "paths": {
+      "@ui/*": ["src/*"]
+    }
   },
   "include": ["src/**/*", "**/*.spec.ts"],
   "exclude": ["node_modules"]
