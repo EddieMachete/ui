@@ -1,0 +1,7 @@
+{
+  // ...other config
+  "rules": {
+    "quotes": ["error", "single"]
+    // ...other rules
+  }
+}
