@@ -9,7 +9,7 @@ const tsconfig = {
   },
 };
 const libraryInputs = {
-  'ui/index': 'src/index.ts',
+  index: 'src/index.ts',
 };
 const formats = ['cjs', 'esm'];
 
