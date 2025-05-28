@@ -2,6 +2,7 @@
   "author": "@EddieMachete",
   "customElements": "custom-elements.json",
   "description": "Base project to quickly get up and running when developing web applications using TypeScript.",
+  "private": false,
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.6",
     "@custom-elements-manifest/analyzer": "^0.10.4",
@@ -30,7 +31,7 @@
   "license": "Apache-2.0",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
-  "name": "em-ui",
+  "name": "eddiemachete-ui",
   "repository": "https://github.com/EddieMachete/ui.git",
   "scripts": {
     "format": "prettier --write .",
