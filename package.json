@@ -1,6 +1,6 @@
 {
   "author": "@EddieMachete",
-  "description": "Base projet to quickly get up and running when developing web applications using TypeScript.",
+  "description": "Base project to quickly get up and running when developing web applications using TypeScript.",
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.6",
     "@eslint/js": "^9.27.0",
