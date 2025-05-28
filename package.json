@@ -3,6 +3,7 @@
   "description": "Base project to quickly get up and running when developing web applications using TypeScript.",
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.6",
+    "@custom-elements-manifest/analyzer": "^0.10.4",
     "@eslint/js": "^9.27.0",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-typescript": "^12.1.2",
@@ -13,6 +14,7 @@
     "@storybook/web-components": "^8.6.14",
     "@storybook/web-components-vite": "^8.6.14",
     "copyfiles": "^2.4.1",
+    "custom-elements-manifest": "^2.1.0",
     "eslint": "^9.27.0",
     "eslint-plugin-storybook": "^0.12.0",
     "globals": "^16.2.0",
@@ -24,14 +26,18 @@
     "typescript-eslint": "^8.33.0"
   },
   "license": "Apache-2.0",
-  "name": "ui",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "name": "em-ui",
   "repository": "https://github.com/EddieMachete/ui.git",
   "scripts": {
     "format": "prettier --write .",
     "lint": "eslint .",
     "storybook": "storybook dev -p 6006",
     "build": "rollup -c && rollup -c --environment MAPPINGS",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "create-custom-elements-manifest": "custom-elements-manifest analyze",
+    "create-custom-elements-manifest:dist": "cem analyze --config custom-elements-manifest-dist.config.mjs"
   },
   "version": "0.0.1"
 }
